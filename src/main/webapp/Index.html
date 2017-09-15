@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Send your message to Slack</h1>
+<table>
+    <tr>
+        <td style="vertical-align: top">
+             <br/>Sender name 
+             <br/>Recipient 
+             <br/>Message 
+        </td>
+        <td style="vertical-align: top">
+        <form action="MyServlet" method="post">
+        <br/>
+            <input type="text" name="sender" id="sender"><br/>
+            <input type="text" name="recipient" id="recipient"><br/>
+            <input type="text" name="message" id="message"><br/>
+            <br/>
+            <button onclick="sendToSlack">
+                Send to Slack
+            </button>
+        </form>
+        </td>
+    </tr>
+</table>
+</body>
+</html>
